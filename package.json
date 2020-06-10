@@ -1,0 +1,28 @@
+{
+  "name": "actitime",
+  "version": "1.0.0",
+  "description": "test task for actiTIME",
+  "private": true,
+  "scripts": {
+    "dev": "webpack",
+    "prod": "cross-env NODE_ENV=production webpack",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "Vladislav Karpov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {}
+}

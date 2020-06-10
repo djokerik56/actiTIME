@@ -1,0 +1,163 @@
+main{
+    .content{
+        max-width: 1200px;
+        margin: 0 auto;
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            line-height: 160%;
+            text-align: center;
+            max-width: 650px;
+            margin-bottom: 55px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__slider{
+            background-color: $yellow;
+            &_info{
+                background-color: #FFF3D7;
+                display: grid;
+                grid-gap: 33.4px;
+                box-shadow: 0px 10px 0px #F5BD3F;
+                border-radius: 50px;
+                &-new{
+                    &:after{
+                        content: 'NEW';
+                        position: absolute;
+                        height: 35px;
+                        background: #F063B8;
+                        box-shadow: 0px 4px 0px #EFE3C5;
+                        border-radius: 0px 0px 4px 4px;
+                        color: #fff;
+                        text-align: center;
+                        align-items: center;
+                        display: flex;
+                        width: auto;
+                        padding: 0 17.65px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    width: fit-content;
+                    &:after{
+                        content: url(../assets/img/arrow-link.svg);
+                        align-items: center;
+                        margin-left: 25px;
+                    }
+                    &:hover{
+                        color: $brand-color;
+                    }
+                }
+                .slide-number{
+                    position: absolute;
+                    width: 167px;
+                    height: 194px;
+                    top: 120px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 202px;
+                    align-items: center;
+                    text-align: center;
+                    color: #9C69E2;
+                    z-index: 2;
+                }
+            }
+        }
+
+        @media(min-width: 320px){
+            &__title{
+                margin-top: 135px;
+                margin-bottom: 40px;
+            }
+            &__text{
+                font-size: 1.44rem;
+            }
+            &__slider{
+                &_info{
+                    margin: 40px 20px;
+                    padding: 40px 30px;
+                    &-new{
+                        &:after{
+                            left: 55px;
+                            top: 30px;
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    margin: 35px auto;
+                }
+                .slide-number{
+                    display: none;
+                }
+            }
+        }
+
+        @media(min-width: 768px){
+            &__title{
+                margin-top: 130px;
+                margin-bottom: 35px;
+            }
+            &__text{
+                font-size: 1.44rem;
+            }
+            &__slider{
+                border-radius: 50px;
+                max-width: 682px;
+                margin: 0 auto;
+                &_info{
+                    margin: 95px 145px;
+                    padding: 40px 55px 40px 115px;
+                    &-new{
+                        &:after{
+                            left: 185px;
+                            top: 85px;
+                        }
+                    }
+                    p{
+                        max-width: 215px;
+                    }
+                    .slide-number{
+                        left: 78px;
+                        display: flex;
+                    }
+                }
+                .swiper-pagination{
+                    margin: 35px auto 35px 60px;
+                }
+            }
+        }
+
+        @media(min-width: 992px){
+            &__slider{
+                &_info{
+                    padding: 40px 60px 40px 115px;
+                }
+            }
+        }
+
+        @media(min-width: 1024px){
+            &__title{
+                margin-top: 55px;
+                margin-bottom: 37px;
+            }
+        }
+        
+        @media(min-width: 1440px){
+            &__slider{
+                max-width: 1200px;
+                &_info{
+                    margin: 95px 52.5px;
+                    &:after{
+                        left: 160px;
+                    }
+                    .slide-number{
+                        left: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

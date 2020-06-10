@@ -1,0 +1,56 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #4B5D68;
+    line-height: 160%;
+
+    @media(min-width: 320px){
+        font-size: 16px;
+        h1,
+        h2,
+        h3,
+        h4{
+            color: #212353;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        h1{
+            font-size: 2.2rem;
+        }
+        h3{
+            font-size: 1.55rem;
+        }
+    }
+
+    @media(min-width: 1024px){
+        font-size: 18px;
+    }
+
+    @media(min-width: 768px){
+        font-size: 16px;
+    }
+}
+.container{
+    margin: 0 auto;
+    
+    @media(min-width: 320px){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media(min-width: 768px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media(min-width: 1024px){
+        max-width: 1620px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+$brand-color: #9C69E2;
+$yellow: #FFC84D;
+$light-yellow:#FFF3D7;

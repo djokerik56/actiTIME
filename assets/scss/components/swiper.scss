@@ -1,0 +1,45 @@
+.swiper{
+    &-container {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+    }
+    &-slide {  
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    &-pagination{
+        position: relative;
+        display: flex;
+        width: fit-content !important;
+        &-bullet{
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            opacity: 1;
+            align-items: center;
+            &-active{
+                width: 10px;
+                height: 10px;
+                background: #F063B8;
+            }
+        }
+    }
+    @media(min-width: 320px){
+        &-pagination{
+            &-bullet{
+                margin: auto 7.5px !important;
+            }
+        }
+    }
+}
